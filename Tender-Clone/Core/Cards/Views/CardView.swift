@@ -30,7 +30,7 @@ struct CardView: View {
                 
                 SwipeActionIndicatorView(xOffset: $xOffset)
             }
-            UserInfoView()
+            UserInfoView(user: user)
                 .padding(.horizontal)
         }
         .frame(width: SizeConstans.cardWidth, height: SizeConstans.cardHeight)
