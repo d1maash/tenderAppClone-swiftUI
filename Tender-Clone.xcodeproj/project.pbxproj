@@ -15,6 +15,7 @@
 		1F0C92932C70EFDF0027E313 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92922C70EFDF0027E313 /* CardView.swift */; };
 		1F0C92952C70F3F00027E313 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92942C70F3F00027E313 /* UserInfoView.swift */; };
 		1F0C92972C70FCD60027E313 /* SwipeActionIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92962C70FCD60027E313 /* SwipeActionIndicatorView.swift */; };
+		1F0C929C2C70FF020027E313 /* SizeConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C929B2C70FF020027E313 /* SizeConstans.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		1F0C92922C70EFDF0027E313 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		1F0C92942C70F3F00027E313 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		1F0C92962C70FCD60027E313 /* SwipeActionIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionIndicatorView.swift; sourceTree = "<group>"; };
+		1F0C929B2C70FF020027E313 /* SizeConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeConstans.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		1F0C92852C70ECDA0027E313 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1F0C92982C70FECD0027E313 /* Constans */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -167,6 +170,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		1F0C92982C70FECD0027E313 /* Constans */ = {
+			isa = PBXGroup;
+			children = (
+				1F0C929B2C70FF020027E313 /* SizeConstans.swift */,
+			);
+			path = Constans;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0C929C2C70FF020027E313 /* SizeConstans.swift in Sources */,
 				1F0C92902C70EE3B0027E313 /* MainTabView.swift in Sources */,
 				1F0C92972C70FCD60027E313 /* SwipeActionIndicatorView.swift in Sources */,
 				1F0C927A2C70EC930027E313 /* ContentView.swift in Sources */,
