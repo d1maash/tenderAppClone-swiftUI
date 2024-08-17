@@ -14,6 +14,7 @@
 		1F0C92902C70EE3B0027E313 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C928F2C70EE3B0027E313 /* MainTabView.swift */; };
 		1F0C92932C70EFDF0027E313 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92922C70EFDF0027E313 /* CardView.swift */; };
 		1F0C92952C70F3F00027E313 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92942C70F3F00027E313 /* UserInfoView.swift */; };
+		1F0C92972C70FCD60027E313 /* SwipeActionIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92962C70FCD60027E313 /* SwipeActionIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		1F0C928F2C70EE3B0027E313 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		1F0C92922C70EFDF0027E313 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		1F0C92942C70F3F00027E313 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		1F0C92962C70FCD60027E313 /* SwipeActionIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			children = (
 				1F0C92922C70EFDF0027E313 /* CardView.swift */,
 				1F0C92942C70F3F00027E313 /* UserInfoView.swift */,
+				1F0C92962C70FCD60027E313 /* SwipeActionIndicatorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F0C92902C70EE3B0027E313 /* MainTabView.swift in Sources */,
+				1F0C92972C70FCD60027E313 /* SwipeActionIndicatorView.swift in Sources */,
 				1F0C927A2C70EC930027E313 /* ContentView.swift in Sources */,
 				1F0C92932C70EFDF0027E313 /* CardView.swift in Sources */,
 				1F0C92782C70EC930027E313 /* Tender_CloneApp.swift in Sources */,
