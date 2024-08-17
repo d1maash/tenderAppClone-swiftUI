@@ -9,7 +9,7 @@ import Foundation
 
 struct User: Identifiable {
     let id: String
-    let fullanme: String
+    let fullname: String
     var age: Int
     var profileImageUrls: [String]
 }

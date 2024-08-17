@@ -1,0 +1,29 @@
+//
+//  CardsViewModel.swift
+//  Tender-Clone
+//
+//  Created by Динмуханбет Айжарыков on 17.08.2024.
+//
+
+import Foundation
+
+
+
+class CardsViewModel: ObservableObject {
+    @Published var cardModels = [CardModel]()
+    
+    private let service: CardService
+    
+    init(service: CardService) {
+        self.service = service
+        Task { await fetchCardModels() }
+    }
+    
+    func fetchCardModels() async {
+        do {
+            self.cardModels = try await service.fetchCardModels()
+        } catch {
+            print("Debug Failed \(error)")
+        }
+    }
+}
