@@ -18,6 +18,7 @@
 		1F0C929C2C70FF020027E313 /* SizeConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C929B2C70FF020027E313 /* SizeConstans.swift */; };
 		1F0C929E2C7101080027E313 /* imageScrollingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C929D2C7101080027E313 /* imageScrollingOverlay.swift */; };
 		1F0C92A02C710A5C0027E313 /* CardImageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C929F2C710A5C0027E313 /* CardImageIndicatorView.swift */; };
+		1F0C92A22C710EC80027E313 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92A12C710EC80027E313 /* CardStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		1F0C929B2C70FF020027E313 /* SizeConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeConstans.swift; sourceTree = "<group>"; };
 		1F0C929D2C7101080027E313 /* imageScrollingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageScrollingOverlay.swift; sourceTree = "<group>"; };
 		1F0C929F2C710A5C0027E313 /* CardImageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageIndicatorView.swift; sourceTree = "<group>"; };
+		1F0C92A12C710EC80027E313 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				1F0C92962C70FCD60027E313 /* SwipeActionIndicatorView.swift */,
 				1F0C929D2C7101080027E313 /* imageScrollingOverlay.swift */,
 				1F0C929F2C710A5C0027E313 /* CardImageIndicatorView.swift */,
+				1F0C92A12C710EC80027E313 /* CardStackView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				1F0C92902C70EE3B0027E313 /* MainTabView.swift in Sources */,
 				1F0C92972C70FCD60027E313 /* SwipeActionIndicatorView.swift in Sources */,
 				1F0C92A02C710A5C0027E313 /* CardImageIndicatorView.swift in Sources */,
+				1F0C92A22C710EC80027E313 /* CardStackView.swift in Sources */,
 				1F0C927A2C70EC930027E313 /* ContentView.swift in Sources */,
 				1F0C92932C70EFDF0027E313 /* CardView.swift in Sources */,
 				1F0C92782C70EC930027E313 /* Tender_CloneApp.swift in Sources */,
