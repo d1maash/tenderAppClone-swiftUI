@@ -15,6 +15,9 @@ struct CardStackView: View {
                 CardView(viewModel: CardsViewModel(service: CardService()), model: card)
             }
         }
+        .onChange(of: viewModel.cardModels) { oldValue, newValue in
+            print("DEBUG: OLD VALUE COUNT IS \(oldValue.count)")
+        }
     }
 }
 
