@@ -11,7 +11,7 @@ import SwiftUI
 struct Tender_CloneApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CardStackView()
         }
     }
 }

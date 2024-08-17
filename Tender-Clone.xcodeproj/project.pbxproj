@@ -82,7 +82,6 @@
 				1F0C92872C70ECF80027E313 /* Extensions */,
 				1F0C92862C70ECF50027E313 /* Shared */,
 				1F0C92852C70ECDA0027E313 /* Utils */,
-				1F0C92772C70EC930027E313 /* Tender_CloneApp.swift */,
 				1F0C92792C70EC930027E313 /* ContentView.swift */,
 				1F0C927B2C70EC950027E313 /* Assets.xcassets */,
 				1F0C927D2C70EC950027E313 /* Preview Content */,
@@ -125,6 +124,7 @@
 		1F0C92882C70ED000027E313 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				1F0C92772C70EC930027E313 /* Tender_CloneApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
