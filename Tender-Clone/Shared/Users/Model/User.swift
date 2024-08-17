@@ -11,5 +11,5 @@ struct User: Identifiable {
     let id: String
     let fullanme: String
     var age: Int
-    var profileImageUrls: (String)
+    var profileImageUrls: [String]
 }
