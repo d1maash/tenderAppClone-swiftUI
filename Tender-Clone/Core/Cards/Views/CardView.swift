@@ -16,17 +16,19 @@ struct CardView: View {
                 .scaledToFill()
                 
             UserInfoView()
-        }.frame(width: cardWidth, height: cardHeight)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
+                .padding(.horizontal)
+        }
+        .frame(width: cardWidth, height: cardHeight)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }
 
 
 private extension CardView {
-    private var cardWidth: CGFloat {
+    var cardWidth: CGFloat {
         UIScreen.main.bounds.width - 20
     }
-    private var cardHeight: CGFloat {
+    var cardHeight: CGFloat {
         UIScreen.main.bounds.height / 1.45
     }
 }
