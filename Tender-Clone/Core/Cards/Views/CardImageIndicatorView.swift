@@ -15,8 +15,8 @@ struct CardImageIndicatorView: View {
         HStack {
             ForEach(0 ..< imageCount, id: \.self) { index in
                 Capsule()
-                    .foregroundStyle(currentImageIndex == index ? .red : .gray)
-                    .frame(width: 100, height: 4)
+                    .foregroundStyle(currentImageIndex == index ? .white : .gray)
+                    .frame(width: imageIndicatorWidth, height: 4)
                     .padding(.top, 8)
                     
             }
@@ -24,6 +24,14 @@ struct CardImageIndicatorView: View {
     }
 }
 
+
+private extension CardImageIndicatorView {
+    var imageIndicatorWidth: CGFloat {
+        return SizeConstans.cardWidth / CGFloat(imageCount) - 28
+    }
+}
+
 #Preview {
-    CardImageIndicatorView(currentImageIndex: 1, imageCount: 3)
+    CardImageIndicatorView(currentImageIndex: 1, imageCount: 4)
+        .preferredColorScheme(.dark)
 }
