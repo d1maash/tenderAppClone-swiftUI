@@ -66,14 +66,24 @@ private extension CardView {
         degrees = 0
     }
     func swipeRight() {
-        xOffset = 500
-        degrees = 12
         
+        withAnimation {
+            xOffset = 500
+            degrees = 12
+        } completion: {
+            
+            viewModel.removeCard(model)
+        }
     }
     
     func swipeLeft() {
-        xOffset = -500
-        degrees = -12
+        withAnimation {
+            xOffset = -500
+            degrees = -12
+            
+        } completion: {
+            viewModel.removeCard(model)
+        }
     }
 }
 

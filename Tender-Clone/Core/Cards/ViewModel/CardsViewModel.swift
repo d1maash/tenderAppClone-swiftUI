@@ -28,8 +28,11 @@ class CardsViewModel: ObservableObject {
     }
     
     func removeCard(_ card: CardModel) {
-        guard let index = cardModels.firstIndex(where: { $0.id == card.id }) else {return}
-        cardModels.remove(at: index)
+        Task {
+            try await Task.sleep(nanoseconds: 500_000_000)
+            guard let index = cardModels.firstIndex(where: { $0.id == card.id }) else {return}
+            cardModels.remove(at: index)
+        }
     }
     
 }
