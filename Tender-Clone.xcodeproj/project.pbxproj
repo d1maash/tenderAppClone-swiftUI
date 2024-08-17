@@ -19,6 +19,7 @@
 		1F0C929E2C7101080027E313 /* imageScrollingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C929D2C7101080027E313 /* imageScrollingOverlay.swift */; };
 		1F0C92A02C710A5C0027E313 /* CardImageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C929F2C710A5C0027E313 /* CardImageIndicatorView.swift */; };
 		1F0C92A22C710EC80027E313 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92A12C710EC80027E313 /* CardStackView.swift */; };
+		1F0C92A62C7111B20027E313 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92A52C7111B20027E313 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		1F0C929D2C7101080027E313 /* imageScrollingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageScrollingOverlay.swift; sourceTree = "<group>"; };
 		1F0C929F2C710A5C0027E313 /* CardImageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageIndicatorView.swift; sourceTree = "<group>"; };
 		1F0C92A12C710EC80027E313 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
+		1F0C92A52C7111B20027E313 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		1F0C92862C70ECF50027E313 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				1F0C92A32C7111A00027E313 /* Users */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -187,6 +190,22 @@
 			path = Constans;
 			sourceTree = "<group>";
 		};
+		1F0C92A32C7111A00027E313 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				1F0C92A42C7111A40027E313 /* Model */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		1F0C92A42C7111A40027E313 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F0C92A52C7111B20027E313 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,6 +286,7 @@
 				1F0C92932C70EFDF0027E313 /* CardView.swift in Sources */,
 				1F0C92782C70EC930027E313 /* Tender_CloneApp.swift in Sources */,
 				1F0C92952C70F3F00027E313 /* UserInfoView.swift in Sources */,
+				1F0C92A62C7111B20027E313 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
