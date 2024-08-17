@@ -51,6 +51,12 @@ private extension CardView {
 
 
 private extension CardView {
+    
+    var screenCutoff: CGFloat {
+        (UIScreen.main.bounds.width / 2) * 0.8
+    }
+    
+    
     var cardWidth: CGFloat {
         UIScreen.main.bounds.width - 20
     }
