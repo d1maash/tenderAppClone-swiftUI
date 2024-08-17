@@ -26,4 +26,10 @@ class CardsViewModel: ObservableObject {
             print("Debug Failed \(error)")
         }
     }
+    
+    func removeCard(_ card: CardModel) {
+        guard let index = cardModels.firstIndex(where: { $0.id == card.id }) else {return}
+        cardModels.remove(at: index)
+    }
+    
 }
