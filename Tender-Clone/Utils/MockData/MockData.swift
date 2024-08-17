@@ -16,7 +16,7 @@ struct MockData {
             age: 22,
             profileImageUrls: [
                 "firstPerson",
-                "firstPerson"
+                "secondPerson"
             ]
         ),
         .init(
@@ -24,8 +24,8 @@ struct MockData {
             fullname: "Anelya",
             age: 28,
             profileImageUrls: [
-                "secondPerson",
-                "secondPerson"
+                "thirdPerson",
+                "forthPerson"
             ]
         ),
         .init(
@@ -33,8 +33,8 @@ struct MockData {
             fullname: "Aigul",
             age: 32,
             profileImageUrls: [
-                "firstPerson",
-                "firstPerson"
+                "fifthPerson",
+                "sixthPerson"
             ]
         )
     ]

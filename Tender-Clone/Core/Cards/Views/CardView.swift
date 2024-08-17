@@ -22,6 +22,7 @@ struct CardView: View {
                 Image(user.profileImageUrls[currentImageIndex])
                     .resizable()
                     .scaledToFill()
+                    .frame(width: SizeConstans.cardWidth, height: SizeConstans.cardHeight)
                     .overlay {
                         imageScrollingOverlay(currentImageIndex: $currentImageIndex, imageCount: imageCount)
                     }
@@ -31,7 +32,6 @@ struct CardView: View {
                 SwipeActionIndicatorView(xOffset: $xOffset)
             }
             UserInfoView(user: user)
-                .padding(.horizontal)
         }
         .frame(width: SizeConstans.cardWidth, height: SizeConstans.cardHeight)
         .clipShape(RoundedRectangle(cornerRadius: 10))
