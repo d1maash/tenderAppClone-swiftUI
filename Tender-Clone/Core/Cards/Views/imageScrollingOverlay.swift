@@ -32,7 +32,7 @@ struct imageScrollingOverlay: View {
 private extension imageScrollingOverlay {
     func updateImageIndex(increment: Bool) {
         if increment {
-            guard currentImageIndex < imageCount - 1 else {return}
+            guard currentImageIndex < imageCount - 1 else { return }
             currentImageIndex += 1
         } else {
             guard currentImageIndex > 0 else { return }
