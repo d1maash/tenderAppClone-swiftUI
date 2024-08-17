@@ -23,13 +23,12 @@ struct CardView: View {
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .offset(x: xOffset)
         .rotationEffect(.degrees(degrees))
+        .animation(.snappy, value: xOffset)
         .gesture(
             DragGesture()
                 .onChanged({ value in
-                    withAnimation(.snappy) {
-                        xOffset = value.translation.width
-                        degrees = Double(value.translation.width / 25)
-                    }
+                    xOffset = value.translation.width
+                    degrees = Double(value.translation.width / 25)
                 }).onEnded({ value in
                     onDragEnded(value)
                 })
