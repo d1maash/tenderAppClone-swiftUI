@@ -14,10 +14,10 @@ struct CardView: View {
             Image(.firstPerson)
                 .resizable()
                 .scaledToFill()
-                .frame(width: cardWidth, height: cardHeight)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
+                
             UserInfoView()
-        }
+        }.frame(width: cardWidth, height: cardHeight)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }
 
