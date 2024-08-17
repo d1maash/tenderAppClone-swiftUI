@@ -30,8 +30,22 @@ struct CardView: View {
                         xOffset = value.translation.width
                         degrees = Double(value.translation.width / 25)
                     }
+                }).onEnded({ value in
+                    onDragEnded(value)
                 })
         )
+    }
+}
+
+private extension CardView {
+    func onDragEnded(_ value: _ChangedGesture<DragGesture>.Value) {
+        let width = value.translation.width
+        
+        
+        if abs(width) < 300 {
+            xOffset = 0
+            degrees = 0
+        }
     }
 }
 
