@@ -16,6 +16,7 @@
 		1F0C92952C70F3F00027E313 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92942C70F3F00027E313 /* UserInfoView.swift */; };
 		1F0C92972C70FCD60027E313 /* SwipeActionIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92962C70FCD60027E313 /* SwipeActionIndicatorView.swift */; };
 		1F0C929C2C70FF020027E313 /* SizeConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C929B2C70FF020027E313 /* SizeConstans.swift */; };
+		1F0C929E2C7101080027E313 /* imageScrollingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C929D2C7101080027E313 /* imageScrollingOverlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		1F0C92942C70F3F00027E313 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		1F0C92962C70FCD60027E313 /* SwipeActionIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionIndicatorView.swift; sourceTree = "<group>"; };
 		1F0C929B2C70FF020027E313 /* SizeConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeConstans.swift; sourceTree = "<group>"; };
+		1F0C929D2C7101080027E313 /* imageScrollingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageScrollingOverlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				1F0C92922C70EFDF0027E313 /* CardView.swift */,
 				1F0C92942C70F3F00027E313 /* UserInfoView.swift */,
 				1F0C92962C70FCD60027E313 /* SwipeActionIndicatorView.swift */,
+				1F0C929D2C7101080027E313 /* imageScrollingOverlay.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0C929E2C7101080027E313 /* imageScrollingOverlay.swift in Sources */,
 				1F0C929C2C70FF020027E313 /* SizeConstans.swift in Sources */,
 				1F0C92902C70EE3B0027E313 /* MainTabView.swift in Sources */,
 				1F0C92972C70FCD60027E313 /* SwipeActionIndicatorView.swift in Sources */,
