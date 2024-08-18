@@ -31,9 +31,10 @@ struct CardStackView: View {
                     UserMatchView(show: $showMatchView)
                 }
             }
-            .onReceive(matchManager.$matchedUser, perform: { user in
+            .animation(.easeInOut, value: showMatchView)
+            .onReceive(matchManager.$matchedUser) { user in
                 showMatchView = user != nil
-            })
+            }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Text("Tanyspadykpa?")
