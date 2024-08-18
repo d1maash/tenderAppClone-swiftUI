@@ -11,21 +11,23 @@ struct CardStackView: View {
     @StateObject var viewModel = CardsViewModel(service: CardService())
     var body: some View {
         NavigationStack {
-            VStack(spacing: 16) {
-                ZStack {
-                    ForEach(viewModel.cardModels) { card in
-                        CardView(viewModel: viewModel, model: card)
+            ZStack {
+                VStack(spacing: 16) {
+                    ZStack {
+                        ForEach(viewModel.cardModels) { card in
+                            CardView(viewModel: viewModel, model: card)
+                        }
+                    }
+                    
+                    if !viewModel.cardModels.isEmpty {
+                        SwipeActionButtonView(viewModel: viewModel)
                     }
                 }
-                
-                if !viewModel.cardModels.isEmpty {
-                    SwipeActionButtonView(viewModel: viewModel)
-                }
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading, content: {
+                        Text("Tanyspadykpa?").font(.title).fontWeight(.bold)
+                    })
             }
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading, content: {
-                    Text("Tanyspadykpa?").font(.title).fontWeight(.bold)
-                })
             }
         }
     }
