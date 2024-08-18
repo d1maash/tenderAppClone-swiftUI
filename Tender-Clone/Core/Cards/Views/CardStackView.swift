@@ -31,7 +31,9 @@ struct CardStackView: View {
                     UserMatchView(show: $showMatchView)
                 }
             }
-            
+            .onReceive(matchManager.$matchedUser, perform: { user in
+                showMatchView = user != nil 
+            })
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Text("Tanyspadykpa?")
@@ -49,4 +51,5 @@ struct CardStackView: View {
 
 #Preview {
     CardStackView()
+        .environmentObject(MatchManager())
 }

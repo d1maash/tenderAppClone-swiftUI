@@ -79,8 +79,8 @@ private extension CardView {
             xOffset = 500
             degrees = 12
         } completion: {
-            
             viewModel.removeCard(model)
+            matchManager.checkForMatch(withUser: user)
         }
     }
     
