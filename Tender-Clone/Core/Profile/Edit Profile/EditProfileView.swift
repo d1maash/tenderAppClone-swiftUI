@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditProfileView: View {
     @Environment(\.dismiss) var dismiss
-    
+    @State private var occupation = ""
     @State private var bio = ""
     let user: User
     
@@ -29,6 +29,24 @@ struct EditProfileView: View {
                         TextField("Add your bio", text: $bio, axis: .vertical)
                             .padding()
                             .frame(height: 64, alignment: .top)
+                            .background(Color(.secondarySystemBackground))
+                            .font(.subheadline)
+                    }
+                    VStack(alignment: .leading) {
+                        Text("Occupation")
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .padding(.leading)
+                        
+                        HStack {
+                            Image(systemName: "book")
+                            Text("Occupation")
+                            
+                            Spacer()
+                            
+                            Text(occupation)
+                                .font(.footnote)
+                        }.padding()
                             .background(Color(.secondarySystemBackground))
                             .font(.subheadline)
                     }
