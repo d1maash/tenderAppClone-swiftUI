@@ -9,10 +9,11 @@ import SwiftUI
 
 struct CardView: View {
     @ObservedObject var viewModel: CardsViewModel
+    
     @State private var xOffset: CGFloat = 0
     @State private var degrees: Double = 0
     @State private var currentImageIndex = 0
-    
+    @State private var showProfileModel = false
     
     
     let model: CardModel
@@ -32,7 +33,10 @@ struct CardView: View {
                 
                 SwipeActionIndicatorView(xOffset: $xOffset)
             }
-            UserInfoView(user: user)
+            UserInfoView(showProfileModel: $showProfileModel, user: user)
+        }
+        .fullScreenCover(isPresented: $showProfileModel) {
+            Text("User Profile")
         }
         .onReceive(viewModel.$buttonSwipeAction, perform: { action in
             onReceiveSwipeAction(action)
