@@ -16,7 +16,7 @@ struct CardStackView: View {
                     CardView(viewModel: viewModel, model: card)
                 }
             }
-            SwipeActionButtonView()
+            SwipeActionButtonView(viewModel: viewModel)
         }
     }
 }

@@ -35,7 +35,7 @@ struct CardView: View {
             UserInfoView(user: user)
         }
         .onReceive(viewModel.$buttonSwipeAction, perform: { action in
-            
+            onReceiveSwipeAction(action)
         })
         .frame(width: SizeConstans.cardWidth, height: SizeConstans.cardHeight)
         .clipShape(RoundedRectangle(cornerRadius: 10))
