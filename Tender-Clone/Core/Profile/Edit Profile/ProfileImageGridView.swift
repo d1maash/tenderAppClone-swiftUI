@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct ProfileImageGridView: View {
-    
     let user: User
     
     var body: some View {
-        LazyVGrid(columns: columns) {
+        LazyVGrid(columns: columns, spacing: 16) {
             ForEach(0 ..< 6) { index in
                 if index < user.profileImageUrls.count {
                     Image(user.profileImageUrls[index])
@@ -25,6 +24,11 @@ struct ProfileImageGridView: View {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color(.secondarySystemBackground))
                             .frame(width: imageWidth, height: imageHeight)
+                        
+                        Image(systemName: "plus.circle.fill")
+                            .imageScale(.large)
+                            .foregroundStyle(Color.pink)
+                            .offset(x: 4, y: 4)
                     }
                 }
             }

@@ -9,10 +9,30 @@ import SwiftUI
 
 struct EditProfileView: View {
     @Environment(\.dismiss) var dismiss
+    
+    @State private var bio = ""
+    let user: User
+    
     var body: some View {
         NavigationStack {
             ScrollView {
+                ProfileImageGridView(user: user)
+                    .padding()
                 
+                VStack(spacing: 24) {
+                    VStack(alignment: .leading) {
+                        Text("About me")
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .padding(.leading)
+                        
+                        TextField("Add your bio", text: $bio, axis: .vertical)
+                            .padding()
+                            .frame(height: 64, alignment: .top)
+                            .background(Color(.secondarySystemBackground))
+                            .font(.subheadline)
+                    }
+                }
             }
             .scrollIndicators(.hidden)
             .navigationTitle("Edit Profile")
@@ -35,5 +55,5 @@ struct EditProfileView: View {
 }
 
 #Preview {
-    EditProfileView()
+    EditProfileView(user: MockData.users[2])
 }
