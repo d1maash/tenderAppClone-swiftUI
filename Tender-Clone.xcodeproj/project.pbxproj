@@ -29,6 +29,7 @@
 		1F2659062C72547E00F59897 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2659052C72547E00F59897 /* UserProfileView.swift */; };
 		1F26590A2C725A9A00F59897 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2659092C725A9A00F59897 /* CurrentUserProfileView.swift */; };
 		1F26590C2C725E0300F59897 /* CurrentUserProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26590B2C725E0300F59897 /* CurrentUserProfileHeaderView.swift */; };
+		1F26590F2C7265F500F59897 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26590E2C7265F500F59897 /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		1F2659052C72547E00F59897 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		1F2659092C725A9A00F59897 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		1F26590B2C725E0300F59897 /* CurrentUserProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileHeaderView.swift; sourceTree = "<group>"; };
+		1F26590E2C7265F500F59897 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +175,9 @@
 		1F0C928C2C70EDC20027E313 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				1F2659082C725A6F00F59897 /* UserProfile */,
 				1F2659072C725A6D00F59897 /* CurrentUserProfile */,
+				1F26590D2C7265D600F59897 /* Edit Profile */,
+				1F2659082C725A6F00F59897 /* UserProfile */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -281,6 +284,14 @@
 			path = UserProfile;
 			sourceTree = "<group>";
 		};
+		1F26590D2C7265D600F59897 /* Edit Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1F26590E2C7265F500F59897 /* EditProfileView.swift */,
+			);
+			path = "Edit Profile";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -351,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F26590F2C7265F500F59897 /* EditProfileView.swift in Sources */,
 				1F0C929E2C7101080027E313 /* imageScrollingOverlay.swift in Sources */,
 				1F26590A2C725A9A00F59897 /* CurrentUserProfileView.swift in Sources */,
 				1F2659062C72547E00F59897 /* UserProfileView.swift in Sources */,
