@@ -32,7 +32,7 @@ struct CardStackView: View {
                 }
             }
             .onReceive(matchManager.$matchedUser, perform: { user in
-                showMatchView = user != nil 
+                showMatchView = user != nil
             })
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
