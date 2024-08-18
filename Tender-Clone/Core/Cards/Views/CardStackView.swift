@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardStackView: View {
-    @State private var shpwMatchView = false
+    @State private var showMatchView = true
     @StateObject var viewModel = CardsViewModel(service: CardService())
     
     var body: some View {
@@ -25,11 +25,19 @@ struct CardStackView: View {
                         SwipeActionButtonView(viewModel: viewModel)
                     }
                 }
-                .toolbar {
-                    ToolbarItem(placement: .topBarLeading, content: {
-                        Text("Tanyspadykpa?").font(.title).fontWeight(.bold)
-                    })
+                if showMatchView {
+                    UserMatchView(show: $showMatchView)
+                }
             }
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Text("Tanyspadykpa?")
+                        .font(
+                            .title
+                        ).fontWeight(
+                            .bold
+                        )
+                }
             }
         }
     }
