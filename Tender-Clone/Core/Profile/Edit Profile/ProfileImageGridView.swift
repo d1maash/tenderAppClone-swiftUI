@@ -31,5 +31,5 @@ private extension ProfileImageGridView {
 }
 
 #Preview {
-    ProfileImageGridView()
+    ProfileImageGridView(user: MockData.users[2])
 }
