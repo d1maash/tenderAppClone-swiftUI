@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditProfileView: View {
     @Environment(\.dismiss) var dismiss
-    @State private var occupation = ""
+    @State private var occupation = "Model"
     @State private var bio = ""
     let user: User
     
@@ -49,6 +49,40 @@ struct EditProfileView: View {
                         }.padding()
                             .background(Color(.secondarySystemBackground))
                             .font(.subheadline)
+                    }
+                    VStack(alignment: .leading) {
+                        Text("Gender")
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .padding(.leading)
+                        HStack {
+                            Text("Man")
+                            
+                            Spacer()
+                            
+                            Image(systemName: "chevron.right")
+                                .imageScale(.small)
+                        }
+                        .padding()
+                        .background(Color(.secondarySystemBackground))
+                        .font(.subheadline)
+                    }
+                    VStack(alignment: .leading) {
+                        Text("Orientation")
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .padding(.leading)
+                        HStack {
+                            Text("Straight")
+                            
+                            Spacer()
+                            
+                            Image(systemName: "chevron.right")
+                                .imageScale(.small)
+                        }
+                        .padding()
+                        .background(Color(.secondarySystemBackground))
+                        .font(.subheadline)
                     }
                 }
             }
