@@ -60,7 +60,7 @@ struct CurrentUserProfileView: View {
             .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)
             .fullScreenCover(isPresented: $showEditProfile) {
-                Text("Edit Profile")
+                EditProfileView()
             }
         }
     }

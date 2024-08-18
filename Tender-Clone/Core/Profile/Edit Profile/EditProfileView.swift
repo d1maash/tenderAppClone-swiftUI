@@ -15,6 +15,8 @@ struct EditProfileView: View {
                 
             }
             .scrollIndicators(.hidden)
+            .navigationTitle("Edit Profile")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button("Cancel") {

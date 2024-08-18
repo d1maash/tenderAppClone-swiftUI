@@ -30,6 +30,7 @@
 		1F26590A2C725A9A00F59897 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2659092C725A9A00F59897 /* CurrentUserProfileView.swift */; };
 		1F26590C2C725E0300F59897 /* CurrentUserProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26590B2C725E0300F59897 /* CurrentUserProfileHeaderView.swift */; };
 		1F26590F2C7265F500F59897 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26590E2C7265F500F59897 /* EditProfileView.swift */; };
+		1F2659112C72670900F59897 /* ProfileImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2659102C72670900F59897 /* ProfileImageGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		1F2659092C725A9A00F59897 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		1F26590B2C725E0300F59897 /* CurrentUserProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileHeaderView.swift; sourceTree = "<group>"; };
 		1F26590E2C7265F500F59897 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		1F2659102C72670900F59897 /* ProfileImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				1F26590E2C7265F500F59897 /* EditProfileView.swift */,
+				1F2659102C72670900F59897 /* ProfileImageGridView.swift */,
 			);
 			path = "Edit Profile";
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				1F0C92972C70FCD60027E313 /* SwipeActionIndicatorView.swift in Sources */,
 				1F0C92A02C710A5C0027E313 /* CardImageIndicatorView.swift in Sources */,
 				1F0C92A92C7112200027E313 /* CardModel.swift in Sources */,
+				1F2659112C72670900F59897 /* ProfileImageGridView.swift in Sources */,
 				1F0C92A22C710EC80027E313 /* CardStackView.swift in Sources */,
 				1F0C927A2C70EC930027E313 /* ContentView.swift in Sources */,
 				1F0C92932C70EFDF0027E313 /* CardView.swift in Sources */,
