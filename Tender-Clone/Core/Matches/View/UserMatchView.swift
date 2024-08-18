@@ -20,6 +20,69 @@ struct UserMatchView: View {
                     Image(systemName: "heart").foregroundStyle(Color.white).padding()
                     Text("You and Kelly have liked each other...").foregroundStyle(.white)
                 }
+                
+                HStack {
+                    Image(MockData.users[0].profileImageUrls[0])
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 150, height: 150)
+                        .clipShape(Circle())
+                        .background {
+                            Circle()
+                                .fill(Color(.systemGray6))
+                                .frame(width: 150, height: 150)
+                                .shadow(radius: 10)
+                                .overlay {
+                                    Circle()
+                                        .stroke(.white, lineWidth: 2)
+                                        .shadow(radius: 4)
+                                }
+                        }
+                    Image(MockData.users[1].profileImageUrls[0])
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 150, height: 150)
+                        .clipShape(Circle())
+                        .background {
+                            Circle()
+                                .fill(Color(.systemGray6))
+                                .frame(width: 150, height: 150)
+                                .shadow(radius: 10)
+                                .overlay {
+                                    Circle()
+                                        .stroke(.white, lineWidth: 2)
+                                        .shadow(radius: 4)
+                                }
+                        }
+                }
+                
+                VStack(spacing: 16) {
+                    Button("Send Message") {
+                        
+                    }
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.white)
+                    .frame(width: 350, height: 44)
+                    .background(.pink)
+                    .clipShape(Capsule())
+                    
+                    Button("Keep Swiping") {
+                        
+                    } 
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.white)
+                    .frame(width: 350, height: 44)
+                    .background(.clear)
+                    .clipShape(Capsule())
+                    .overlay {
+                        Capsule()
+                            .stroke(.white, lineWidth: 2)
+                            .shadow(radius: 4)
+                    }
+                }
+                
             }
         }
     }
