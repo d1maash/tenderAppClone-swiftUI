@@ -16,8 +16,27 @@ struct CurrentUserProfileView: View {
                 CurrentUserProfileHeaderView(user: user)
                 
                 // account info
-                
+                Section("Account Info") {
+                    HStack {
+                        Text("Name")
+                        
+                        Spacer()
+                        
+                        Text(user.fullname)
+                    }
+                    HStack {
+                        Text("Email")
+                        Spacer()
+                        
+                        Text("test@gmail.com")
+                    }
+                }
                 //legal
+                
+                
+                Section("Legal") {
+                    Text("Terms of Service")
+                }
                 
                 // lagout / dleete
             }
