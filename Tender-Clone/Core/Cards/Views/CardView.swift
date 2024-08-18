@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
+    @EnvironmentObject var matchManager: MatchManager
     @ObservedObject var viewModel: CardsViewModel
     
     @State private var xOffset: CGFloat = 0
