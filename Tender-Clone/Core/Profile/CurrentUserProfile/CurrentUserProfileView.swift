@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct CurrentUserProfileView: View {
+    let user: User
     var body: some View {
         NavigationStack {
             List {
                 // headview
-                
+                CurrentUserProfileHeaderView(user: user)
                 
                 // account info
                 
@@ -25,5 +26,5 @@ struct CurrentUserProfileView: View {
 }
 
 #Preview {
-    CurrentUserProfileView()
+    CurrentUserProfileView(user: MockData.users[1])
 }

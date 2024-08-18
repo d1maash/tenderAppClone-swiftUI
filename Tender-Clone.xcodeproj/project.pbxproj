@@ -28,6 +28,7 @@
 		1F2659042C724C5D00F59897 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2659032C724C5D00F59897 /* SwipeAction.swift */; };
 		1F2659062C72547E00F59897 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2659052C72547E00F59897 /* UserProfileView.swift */; };
 		1F26590A2C725A9A00F59897 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2659092C725A9A00F59897 /* CurrentUserProfileView.swift */; };
+		1F26590C2C725E0300F59897 /* CurrentUserProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26590B2C725E0300F59897 /* CurrentUserProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		1F2659032C724C5D00F59897 /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
 		1F2659052C72547E00F59897 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		1F2659092C725A9A00F59897 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		1F26590B2C725E0300F59897 /* CurrentUserProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				1F2659092C725A9A00F59897 /* CurrentUserProfileView.swift */,
+				1F26590B2C725E0300F59897 /* CurrentUserProfileHeaderView.swift */,
 			);
 			path = CurrentUserProfile;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				1F26590A2C725A9A00F59897 /* CurrentUserProfileView.swift in Sources */,
 				1F2659062C72547E00F59897 /* UserProfileView.swift in Sources */,
 				1F0C92AF2C7112DC0027E313 /* CardService.swift in Sources */,
+				1F26590C2C725E0300F59897 /* CurrentUserProfileHeaderView.swift in Sources */,
 				1F0C929C2C70FF020027E313 /* SizeConstans.swift in Sources */,
 				1F2659022C72499000F59897 /* SwipeActionButtonView.swift in Sources */,
 				1F0C92902C70EE3B0027E313 /* MainTabView.swift in Sources */,
