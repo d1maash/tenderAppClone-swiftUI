@@ -10,6 +10,7 @@ import SwiftUI
 struct CardStackView: View {
     @State private var showMatchView = false
     @StateObject var viewModel = CardsViewModel(service: CardService())
+    @StateObject var matchManager = MatchManager()
     
     var body: some View {
         NavigationStack {
