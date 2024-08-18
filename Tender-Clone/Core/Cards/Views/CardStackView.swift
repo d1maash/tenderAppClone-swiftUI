@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct CardStackView: View {
+    @State private var shpwMatchView = false
     @StateObject var viewModel = CardsViewModel(service: CardService())
+    
     var body: some View {
         NavigationStack {
             ZStack {
