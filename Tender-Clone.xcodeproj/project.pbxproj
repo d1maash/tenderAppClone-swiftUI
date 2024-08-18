@@ -24,6 +24,7 @@
 		1F0C92AC2C7112670027E313 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92AB2C7112670027E313 /* CardsViewModel.swift */; };
 		1F0C92AF2C7112DC0027E313 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92AE2C7112DC0027E313 /* CardService.swift */; };
 		1F0C92B22C7113820027E313 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C92B12C7113820027E313 /* MockData.swift */; };
+		1F2659022C72499000F59897 /* SwipeActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2659012C72499000F59897 /* SwipeActionButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		1F0C92AB2C7112670027E313 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		1F0C92AE2C7112DC0027E313 /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
 		1F0C92B12C7113820027E313 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		1F2659012C72499000F59897 /* SwipeActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				1F0C929D2C7101080027E313 /* imageScrollingOverlay.swift */,
 				1F0C929F2C710A5C0027E313 /* CardImageIndicatorView.swift */,
 				1F0C92A12C710EC80027E313 /* CardStackView.swift */,
+				1F2659012C72499000F59897 /* SwipeActionButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				1F0C929E2C7101080027E313 /* imageScrollingOverlay.swift in Sources */,
 				1F0C92AF2C7112DC0027E313 /* CardService.swift in Sources */,
 				1F0C929C2C70FF020027E313 /* SizeConstans.swift in Sources */,
+				1F2659022C72499000F59897 /* SwipeActionButtonView.swift in Sources */,
 				1F0C92902C70EE3B0027E313 /* MainTabView.swift in Sources */,
 				1F0C92B22C7113820027E313 /* MockData.swift in Sources */,
 				1F0C92972C70FCD60027E313 /* SwipeActionIndicatorView.swift in Sources */,
